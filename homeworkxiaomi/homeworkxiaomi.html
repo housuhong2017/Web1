@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小米家电</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		#outside{
+			width: 1290px;
+			height: 671px;
+			background: #E0E0E0;
+		}
+		/*首行文字*/
+		.world{
+			width: 1263px;
+			height: 25px;
+			margin: 3px;
+		}
+		.firstrow{
+			float: left;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.lastworld{
+			float: right;
+			font-size: 18px;
+		}
+		a:link.re{
+			color: red;
+			text-decoration: underline;
+		}
+		div.outerlayer{
+			float: left;
+			width: 230px;
+			height: 290px;
+			border: 1px;
+			background: white;
+			margin: 7px;/*上右下左*/
+		}
+		.a11img{
+			float: left;
+			width:auto;
+			height:auto;
+			border: 1px;
+			margin: 7px;/*外边距*/
+		}
+		div.a12img img{
+			float: center;
+			width: 160px;
+			height: 160px;
+			margin-left:35px;
+		}
+		/*盒子中家电名字第一排文字*/
+		div.desc{
+			text-align: center;
+			width: 220px;
+			font-size: 14px;
+			margin: 5px;
+		}
+		/*第二排文字*/
+		div.desc1{
+			text-align: center;
+			width: 220px;
+			font-size: 12px;
+		}
+		div font.color{
+			color: gray;
+			text-decoration:line-through;
+			font-size: 15px;
+		}
+		/*价格*/
+		.desc2{
+			text-align: center;
+			width: 220px;
+			font-size: 15px;
+			margin: 7px;
+		}
+		/*摄像机文字部分*/
+		.desc3{
+			text-align: center;
+			width: 100px;
+			font-size: 15px;
+			margin-left: 3px;
+			padding-top: 50px;
+		}
+		div.outerlayer2{
+			float: left;
+			width: 230px;
+			height: 136px;
+			border: 1px;
+			background: white;
+			margin: 7px;/*上右下左*/
+		}
+		div.a251img img{
+			float:right;
+			width: 100px;
+			height: 110px;
+			margin: 1px;
+		}
+		div.a252img img{
+			float:left;
+			width: 230px;
+			height: 136px;
+			margin: 1px;
+		}
+		div a:link{
+			text-decoration: none;
+			color: black;
+		}
+		div a:hover{
+			text-decoration: none;
+		}
+		/*鼠标经过时实现浮动*/
+		div.outerlayer:hover{
+			margin-top: 1px;
+		}
+		div.a11img:hover{
+			margin-top: 1px;
+		}
+		div.outerlayer2:hover{
+			margin-top: 1px;
+		}
+		/*当用户选择一个选项时延伸出另一个菜单*/
+		
+		.pop{
+			display: none;
+			width: auto;
+			height: 30px;
+			float: bottom;
+			text-align:-2em;
+			color:white;
+			font-size: 8px;
+			padding: 0px 5px 5px 5px;
+			background: orange;
+		}
+		.logo{
+			float:left;
+			width: 230px;
+			height: 25px;
+			font-size: 15px;
+			color: white;
+			text-align: center;
+		}
+		span.bgcolor1{
+			background: red;
+		}
+		span.bgcolor2{
+			background: green;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+        	var ms= document.getElementsByClassName("outerlayer");
+        	var pop = document.getElementsByClassName("pop");
+        	for (var i = ms.length- 1; i >= 0; i--) {
+        		
+        	ms[i].onmouseover = function(){
+            	pop[0].style.display = "block";
+            	pop[1].style.display = "block";
+            	pop[2].style.display = "block";
+            	pop[3].style.display = "block";
+            	pop[4].style.display = "block";
+            	pop[5].style.display = "block";
+        	};
+        	ms[i].onmouseout = function(){
+            	pop[0].style.display = "none";
+            	pop[1].style.display = "none";
+            	pop[2].style.display = "none";
+            	pop[3].style.display = "none";
+            	pop[4].style.display = "none";
+            	pop[5].style.display = "none";
+       	 	};
+       	 	};
+    	};
+	</script>
+</head>
+<body>
+	<div id="outside">
+		<div class="world">
+			<span class="firstrow">家电</span>
+			<span class="lastworld">
+				<a href="#" class="re">热门</a>&nbsp;&nbsp;
+				<a href="">电视影音</a>&nbsp;&nbsp;
+				<a href="">电脑</a>&nbsp;&nbsp;
+				<a href="">家居</a>
+			</span>
+		</div>
+		<div class="a11img">
+			<a href="images/a11.jpg">
+				<img src="images/a11.jpg" alt="a11"/>
+			</a>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo">
+					<span class="bgcolor1">享9折</span>
+				</div>
+				<a href="images/a12.jpg">
+					<img src="images/a12.jpg" alt="a12"/>
+					<div class="desc">小米电视4A 32"</div>
+				</a>
+					<div class="desc1"><font color="gray">64位四核处理器/1GB+4GB大内存</font></div>
+					<div class="desc2"><font color="#EA7500">999元</font><font class="color">1199元</font></div>
+			</div>
+			<div class ="pop">
+				听说小米客服满腹经纶，能不能为在下对副对联！上联是 ...</br>
+				来自于 断点 的评价
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"></div>
+				<a href="images/a13.jpg">
+					<img src="images/a13.jpg" alt="a13"/>
+				
+				<div class="desc">小米电视4A 49英寸 标准版</div></a>
+				<div class="desc1"><font color="gray">2GB+8GB 大储存/全高清HDR</font></div>
+				<div class="desc2"><font color="#EA7500">2399元</font></div>
+			</div>
+			<div class ="pop">
+				黑科技，便宜大器大爱，支持小米，支持国货！
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"><span class="bgcolor2">新品</span></div>
+				<a href="images/a14.jpg">
+					<img src="images/a14.jpg" alt="a14"/>
+				
+				<div class="desc">小米笔记本Pro 15.6英寸</div>
+				</a>
+				<div class="desc1"><font color="gray">全金属强化机身/FHD全贴合屏幕</font></div>
+				<div class="desc2"><font color="#EA7500">5599元</font></div>
+			</div>
+			<div class ="pop">
+				强，支持小米，开机一瞬间还是惊艳到我了，键盘我很喜欢...
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"></div>
+				<a href="images/a15.jpg">
+					<img src="images/a15.jpg" alt="a15"/>
+				
+				<div class="desc">小米笔记本Air 13.3" i7处理器</div>
+				</a>
+				<div class="desc1"><font color="gray">Intel酷睿i7处理器，8GB内存+256GB</font></div>
+				<div class="desc2"><font color="#EA7500">5999元</font></div>
+			</div>
+			<div class="pop">简约、大气，性价比超高，指纹解锁方便，运行速度快，从...
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"></div>
+				<a href="images/a22.jpg">
+					<img src="images/a22.jpg" alt="a22"/>
+				
+				<div class="desc">米家恒温电水壶</div>
+				</a>
+				<div class="desc1"><font color="gray">水温智能控制，304不锈钢内胆</font></div>
+				<div class="desc2"><font color="#EA7500">199元</font></div>
+			</div>
+			<div class="pop">质量杠杠的。白色好看，就是担心容易脏。喜欢小米能多出...
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"><span class="bgcolor2">新品</span></div>
+				<a href="images/a23.jpg">
+					<img src="images/a23.jpg" alt="a23"/>
+				
+				<div class="desc">智米全直流变频空调</div>
+				</a>
+				<div class="desc1"><font color="gray">一级能效，强劲冷暖</font></div>
+				<div class="desc2"><font color="#EA7500">4399元</font></div>
+			</div>
+		</div>
+		<div class="outerlayer">
+			<div class="a12img">
+				<div class="logo"></div>
+				<a href="images/a24.jpg">
+					<img src="images/a24.jpg" alt="a24"/>
+				
+				<div class="desc">小米净水器（厨上式） 增强版</div>
+				</a>
+				<div class="desc1"><font color="gray">400加仑大流量，纯水更多，废水更少</font></div>
+				<div class="desc2"><font color="#EA7500">1499元</font></div>
+			</div>
+			<div class="pop">此乃王母娘娘蟠桃大会指定专用净水器，每个滤芯都经瑶池...
+			</div>
+		</div>
+		<div class="outerlayer2">
+			<div class="a251img">
+				<a href="images/a251.jpg">
+					<img src="images/a251.jpg" alt="a251"/>
+				
+				<div class="desc3">小白摄像机</div>
+				</a>
+				<div class="desc2"><font color="#EA7500">399元</font></div>
+			</div>
+		</div>
+		<div class="outerlayer2">
+			<div class="a252img">
+				<a href="images/a252.jpg">
+					<img src="images/a252.jpg" alt="a252"/>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
