@@ -1,0 +1,151 @@
+body{
+
+}
+#center{
+	width: 1080px;
+	height: 1100px;	
+	background-color: #666666;
+}
+#banner{
+	width: 1080px;
+	height:180px;
+	color: white;
+	background: url(4.jpg);
+}
+#banner2{
+	width: 1080px;
+	height: 45px;	
+	background-color: #333333;
+}
+h1{
+	text-align: center;
+	font-size: 36px;
+	padding-top: 50px;
+
+}
+/*导航*/
+		#nav{
+			list-style: none;
+			font-size: 16px;
+			line-height: 25px;
+			margin-top: -18px;	
+		}
+		#nav a:link,#nav a:visited{
+			display:block;
+			width:170px;
+			color: white;
+			text-align:center;
+			text-decoration:none;
+			font-weight: bolder;
+		}
+		#nav li ul a:link,#nav li ul a:visited{
+			background:#333333;
+			font-weight: bold;
+		}
+		#nav a:hover{
+			color:black;
+			text-decoration: underline;
+			font-weight: bold;
+			background:#DDDDDD;
+			text-decoration:none;
+		}
+		#nav ul{
+			list-style: none;
+		}
+		#nav li{
+			float:left;
+			width: 120px;
+			line-height: 45px;
+			padding-right: 35px;
+			
+			position: relative;
+			background-color: #333333;
+		}
+		#nav li ul li a:hover{
+			float: left;
+			background:#DDDDDD;
+		}
+		#nav li ul{
+			display: none;
+			left: -20px;
+			position: absolute;
+		}
+		#nav li.subMenuShow ul{
+			display: block;
+			position: absolute;
+			z-index: 5;
+		}
+/*图片浏览*/
+		.wrap{
+			width: 1080px;
+			height:500px;
+			position: relative;
+			overflow: hidden;
+			position: absolute;
+			margin-left: 55px;
+			position: relative;
+
+		}
+		.wrap a{
+			display: none;
+		}
+		.bottom{
+			width: 900px;
+			height: 73px;
+			bottom:300px;
+			left:50px;
+			position: absolute;
+			position: relative;	
+		}
+		.bottom>span{
+			width: 50px;
+			height: 73px;
+			line-height: 73px;
+			text-align: center;
+			color: black;
+			font-size: 80px;
+			float: left;
+			cursor: pointer;
+			font-weight: bolder;
+		}
+		#next{
+			float: right;
+		}
+
+
+	.box{
+		width: 1080px;
+		height: 350px;
+		margin-top: 40px;
+		background: url(../images/dc.jpg);
+		position: absolute;
+	}
+	ul,li{
+		list-style: none;
+	}
+	.text>ul>li{
+		width: 280px;
+		height: 300px;
+		float: left;
+		background-color:#fff;
+		margin-left: 40px;
+		margin-bottom: 14px;
+		text-align: center;
+		position: relative;
+		border:solid 1px white;
+	}
+	ul li img:hover{
+		border: solid 4px gray;
+	}
+	.hide{
+		width: 280px;
+		height: 75px;
+		background-color: #DDDDDD;
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		display: none;
+	}
+	.text>ul>li:hover .hide{
+		display: block;
+	}
